@@ -1,0 +1,22 @@
+\frametitle{회전과 이동이 함께 이뤄진 좌표계 변환 (1/2)}
+
+$
+\mathbf R = \left [ \begin{array}{cc} \mathbf R_{33} & 0 \\ \mathbf O_3^{row}  & 1 \end{array} \right ]
+,~~~~$
+$
+\mathbf T_{\mathbf d} = \left [ \begin{array}{cc} \mathbf I_{33} & \mathbf d \\ \mathbf O_3^{row} & 1 \end{array} \right ]
+,~~~~$
+$
+\mathbf T_{\mathbf d} \mathbf R = \left [ \begin{array}{cc} \mathbf R_{33} & \mathbf d \\ \mathbf O_3^{row} & 1 \end{array} \right ]
+$
+
+
+\begin{eqnarray}
+\mathbf p_A &=
+\left [ \begin{array}{cc} \mathbf R_{33} & \mathbf d \\ \mathbf O_3^{row} & 1 \end{array} \right ]
+\mathbf p_B & \nonumber \\
+\mathbf p_B &=
+\left [ \begin{array}{cc} \mathbf R_{33}^{\rm T} &  \mathbf R_{33}^{\rm T} \mathbf d \\ \mathbf O_3^{row} & 1 \end{array} \right ]
+\mathbf p_A  \nonumber
+\end{eqnarray}
+

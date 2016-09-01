@@ -1,0 +1,20 @@
+\frametitle{구면보간(球面補間) 계산법}
+
+\begin{itemize}
+\item $a(t)$와 $b(t)$를 구하고 나면, 보간된 사원수 $\hat q_t$
+\item $\hat q_t = a(t) \hat q_0 + b(t) \hat q_1$
+\end{itemize}
+
+\begin{itemize}
+\item 사원수가 동일한 각속도로 부드럽게 보간된다. 이러한 보간 방법은 구면보간
+\item ``slerp"이라는 이름으로 종종 부름
+\item 이때 사원수의 크기는 언제나 1
+\end{itemize}
+
+\begin{eqnarray} \nonumber
+\theta_d & = & \cos^{-1} (\hat q_0 \cdot \hat q_1) \\ \nonumber
+s & = & \sin \theta_d = \sqrt{1 - (\hat q_0 \cdot \hat q_1)^2} \\ \nonumber
+\hat q_t & = & \frac{\sin \theta_{1-t}}{s} \hat q_0+ \frac{\sin \theta_t}{s} \hat q_1 \nonumber
+\end{eqnarray}
+
+
